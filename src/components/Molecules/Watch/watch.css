@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.watches-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.watch-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.watch-card {
+  width: 24%;
+
+  margin-top: 15px;
+  padding: 10px;
+}
+
+h5.watch-title-text {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.watch__button-block {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+
+button.watch-close__btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  cursor: pointer;
+  color: #fff;
+  background-color: cadetblue;
+  border: none;
+}
+
+a.watch-title-link {
+
+  cursor: pointer;
+}
+
+.clock-container {
+  position: relative;
+  width: 20%;
+  overflow: hidden;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.clock-container.styling {
+  box-shadow: 0px 0px 10px #888888;
+  border-radius: 50%;
+  min-width: 100px;
+  margin-top: 15%;
+}
+
+.clock-container::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.clock-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background-numbers {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  z-index: 1;
+}
+.numbers {
+  fill: grey;
+}
+
+.indicator {
+  border-radius: 10px;
+  transform-origin: bottom;
+  outline: 1px solid transparent;
+  position: absolute;
+  bottom: 50%;
+}
+.indicator.seconds-indicator {
+  width: 0.5%;
+  height: 37.5%;
+  z-index: 2;
+  background-color: #dfc48c;
+}
+.indicator.seconds-indicator.transition-effect {
+}
+
+.indicator.minutes-indicator {
+  width: 1%;
+  height: 30%;
+  z-index: 3;
+  background-color: #cd6a51;
+}
+.indicator.minutes-indicator.transition-effect {
+}
+
+.indicator.hours-indicator {
+  width: 1.5%;
+  height: 22.5%;
+  z-index: 4;
+  background-color: #8f9c6c;
+}
+.indicator.hours-indicator.transition-effect {
+}
+
+.indicator-cover {
+  position: absolute;
+  bottom: 48.5%; /*(50% - (3% /2)) */
+  border-radius: 50%;
+  width: 3%;
+  height: 3%;
+  background-color: lightgrey;
+  z-index: 5;
+}
+
+.digital {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
